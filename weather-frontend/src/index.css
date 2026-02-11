@@ -1,0 +1,328 @@
+/* index.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  max-width: 95%;
+  max-height: 98vh;
+  background: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  background: #4facfe;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card {
+  margin-top: 8px;
+  width: 95%;
+  padding: 12px;
+  background: #f7f9fc;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.city {
+  color: #555;
+  font-size: 16px;
+}
+
+.temp {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 3px 0;
+}
+
+.condition {
+  color: #777;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.details {
+  border-top: 1px solid #eee;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 15px;
+}
+
+.info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forecastSection {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.forecastSection h4 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.rowCards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding-bottom: 8px;
+}
+
+.forecastCard {
+  flex: 0 0 110px;
+  background: #e0f0ff;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.forecastCard .emoji {
+  font-size: 28px;
+  margin: 0;
+}
+
+.forecastCard .time {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.forecastCard .tempSmall {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Responsive Design */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 12px;
+    max-height: 96vh;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  input, button {
+    font-size: 16px;
+    padding: 6px;
+    margin-bottom: 8px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .city {
+    font-size: 14px;
+  }
+
+  .temp {
+    font-size: 28px;
+  }
+
+  .condition {
+    font-size: 14px;
+  }
+
+  .row {
+    font-size: 13px;
+  }
+
+  .forecastSection h4 {
+    font-size: 14px;
+  }
+
+  .forecastCard {
+    flex: 0 0 90px;
+    padding: 8px;
+  }
+
+  .forecastCard .emoji {
+    font-size: 24px;
+  }
+
+  .forecastCard .time {
+    font-size: 10px;
+  }
+
+  .forecastCard .tempSmall {
+    font-size: 12px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  html, body {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    padding: 10px;
+    height: auto;
+    min-height: 100vh;
+    display: block;
+  }
+
+  .container {
+    width: calc(100% - 20px);
+    padding: 10px;
+    max-height: none;
+    height: auto;
+    overflow: visible;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 10px auto;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  input, button {
+    width: 100%;
+    font-size: 14px;
+    padding: 6px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    box-sizing: border-box;
+  }
+
+  .city {
+    font-size: 12px;
+  }
+
+  .temp {
+    font-size: 24px;
+    margin: 2px 0;
+  }
+
+  .condition {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .details {
+    margin-top: 6px;
+    padding-top: 6px;
+  }
+
+  .row {
+    font-size: 12px;
+    padding: 2px 0;
+  }
+
+  .forecastSection {
+    margin-top: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .forecastSection h4 {
+    font-size: 12px;
+    margin: 4px 0;
+  }
+
+  .rowCards {
+    gap: 8px;
+    padding-bottom: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+  }
+
+  .forecastCard {
+    flex: 0 0 70px;
+    padding: 6px;
+    border-radius: 10px;
+  }
+
+  .forecastCard .emoji {
+    font-size: 20px;
+  }
+
+  .forecastCard .time {
+    font-size: 9px;
+    margin: 3px 0;
+  }
+
+  .forecastCard .tempSmall {
+    font-size: 10px;
+  }
+}
